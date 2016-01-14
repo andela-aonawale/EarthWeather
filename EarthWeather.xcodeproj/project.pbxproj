@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		850878DA1C47C16300896418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850878D91C47C16300896418 /* AppDelegate.swift */; };
-		850878DC1C47C16300896418 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850878DB1C47C16300896418 /* ViewController.swift */; };
 		850878DF1C47C16300896418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850878DD1C47C16300896418 /* Main.storyboard */; };
 		850878E11C47C16300896418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850878E01C47C16300896418 /* Assets.xcassets */; };
 		850878E41C47C16300896418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850878E21C47C16300896418 /* LaunchScreen.storyboard */; };
 		850878EF1C47C16300896418 /* EarthWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850878EE1C47C16300896418 /* EarthWeatherTests.swift */; };
 		850878FA1C47C16300896418 /* EarthWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850878F91C47C16300896418 /* EarthWeatherUITests.swift */; };
+		850879081C47C2EF00896418 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850879071C47C2EF00896418 /* MapViewController.swift */; };
+		8508790A1C47D27F00896418 /* ShowWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850879091C47D27F00896418 /* ShowWeatherViewController.swift */; };
+		8508790C1C47FAB700896418 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8508790B1C47FAB700896418 /* Location.swift */; };
+		8508790E1C48057600896418 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8508790D1C48057600896418 /* APIClient.swift */; };
+		850879101C48097000896418 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8508790F1C48097000896418 /* CurrentWeather.swift */; };
+		850879121C482AC900896418 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850879111C482AC900896418 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		850878D61C47C16300896418 /* EarthWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850878D91C47C16300896418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		850878DB1C47C16300896418 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		850878DE1C47C16300896418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		850878E01C47C16300896418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850878E31C47C16300896418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		850878F51C47C16300896418 /* EarthWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		850878F91C47C16300896418 /* EarthWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthWeatherUITests.swift; sourceTree = "<group>"; };
 		850878FB1C47C16300896418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		850879071C47C2EF00896418 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		850879091C47D27F00896418 /* ShowWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowWeatherViewController.swift; sourceTree = "<group>"; };
+		8508790B1C47FAB700896418 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8508790D1C48057600896418 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8508790F1C48097000896418 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		850879111C482AC900896418 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				850878D91C47C16300896418 /* AppDelegate.swift */,
-				850878DB1C47C16300896418 /* ViewController.swift */,
 				850878DD1C47C16300896418 /* Main.storyboard */,
 				850878E01C47C16300896418 /* Assets.xcassets */,
 				850878E21C47C16300896418 /* LaunchScreen.storyboard */,
 				850878E51C47C16300896418 /* Info.plist */,
+				850879071C47C2EF00896418 /* MapViewController.swift */,
+				850879091C47D27F00896418 /* ShowWeatherViewController.swift */,
+				8508790B1C47FAB700896418 /* Location.swift */,
+				8508790D1C48057600896418 /* APIClient.swift */,
+				8508790F1C48097000896418 /* CurrentWeather.swift */,
+				850879111C482AC900896418 /* Extensions.swift */,
 			);
 			path = EarthWeather;
 			sourceTree = "<group>";
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				850878DC1C47C16300896418 /* ViewController.swift in Sources */,
 				850878DA1C47C16300896418 /* AppDelegate.swift in Sources */,
+				8508790A1C47D27F00896418 /* ShowWeatherViewController.swift in Sources */,
+				8508790C1C47FAB700896418 /* Location.swift in Sources */,
+				8508790E1C48057600896418 /* APIClient.swift in Sources */,
+				850879101C48097000896418 /* CurrentWeather.swift in Sources */,
+				850879081C47C2EF00896418 /* MapViewController.swift in Sources */,
+				850879121C482AC900896418 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
